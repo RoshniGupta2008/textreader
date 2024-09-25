@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "abc_backend": {
+      "main": "src/abc_backend/main.mo",
+      "type": "motoko"
+    },
+    "abc_frontend": {
+      "dependencies": [
+        "abc_backend"
+      ],
+      "source": [
+        "src/abc_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "abc_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
